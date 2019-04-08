@@ -1,0 +1,270 @@
+body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea,p {
+	margin:0px;
+	padding:0px;
+	font-size:13px;
+}
+ul {
+	list-style:none;
+}
+img,a img {
+	border:none;
+}
+a {
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+#header {
+	height:452px;
+	background:url(top_bg.jpg) repeat-x;
+	color:#ffffff;
+}
+#main {
+	background:url(main_top_bg.jpg) repeat-x;
+}
+#main1 {
+	background:url(main1_bottom_bg.jpg) 0px bottom repeat-x;
+}
+#footer {
+	height:100px;
+	background:url(footer_bg.jpg) repeat-x;
+}
+#top {
+	height:100px;
+	
+}
+#top .logo {
+	width:291px;
+	padding:25px 0 0 25px;
+	float:left;
+}
+#top h1 span {
+	font-size:14px;
+	color:#CCCCCC;
+	float:right;
+}
+#top .serach {
+	width:280px;
+	height:50px;
+	float:right;
+	margin:30px 30px 0px 20px;
+	
+}
+#top .serach .text {
+	width:180px;
+	height:15px;
+	background:#161B1F;
+	color:#BCBCBC;
+	border:1px solid #0B0E10;
+	padding:5px;
+}
+#top .serach .submit {
+	width:80px;
+	height:28px;
+	cursor:pointer;
+}
+#nav {
+	height:50px;
+	
+}
+#nav ul {
+	margin:0 0 0 25px;
+}
+#nav ul li {
+	float:left;
+	margin:0 10px 0 0;
+}
+#nav ul li a {
+	color:black;
+	font-size:13px;
+	font-weight:bold;
+	display:block;
+	width:103px;
+	height:27px;
+	text-align:center;
+	line-height:27px;
+	margin:10px 0 0 0;
+}
+#nav ul li a:hover {
+	background:url(hover.png);
+	color:#ffffff;
+	text-decoration:none;
+}
+#runplay {
+	height:301px;
+	background:url(runplay_bg.jpg);
+}
+#runplay .left {
+	width:300px;
+	float:left;
+	margin:50px 0 0 30px;
+	display:inline;
+}
+#runplay .right {
+	width:300px;
+	float:left;
+	margin:50px 0 0 80px;
+	display:inline;
+}
+#runplay .right dl dt {
+	font-size:24px;
+	margin:0 0 20px 0;
+}
+#runplay .right dl dd.txt {
+	font-size:16px;
+	color:#ffffff;
+	margin:0 0 20px 0;
+}
+#runplay .right dl dd.btn a {
+	background:url(default.png);
+	display:block;
+	width:103px;
+	height:27px;
+	text-align:center;
+	line-height:27px;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+}
+#runplay .right dl dd.btn a:hover {
+	background:url(d_hover.png);
+}
+.auto {
+	width:980px;
+	margin:0 auto;
+}
+
+#wrap {
+	width:920px;
+	height:850px;
+	margin:0 auto;
+}
+#wrap #leftBody {
+	width:620px;
+	height:850px;
+	float:left;
+}
+#wrap #rightBody {
+	width:240px;
+	height:850px;
+	float:right;
+}
+
+#wrap #leftBody .leftDiv1 h2 {
+	color:#000000;
+	font-size:24px;
+	font-weight:normal;
+	margin:25px 0 20px 0;
+}
+#wrap #leftBody .leftDiv1  p {
+	color:#555555;
+}
+#wrap #leftBody .leftDiv1  p a {
+	color:#0074C5;
+}
+
+#wrap #leftBody .leftDiv2 h2 {
+	color:#000000;
+	font-size:24px;
+	font-weight:normal;
+	margin:25px 0 20px 0;
+}
+
+#wrap #leftBody .leftDiv2 ul li {
+	width:270px;
+	height:170px;
+	background:#F1F2EA;
+	border:1px solid #D5D7CA;
+	padding:6px;
+	float:left;
+	margin:0 25px 25px 0;
+}
+#wrap #leftBody .leftDiv2 ul li p {
+	font-size:16px;
+	color:#000000;
+	margin-top:10px;
+	font-weight:bold;
+}
+
+#wrap #leftBody .leftDiv3 {
+	clear:both;
+}
+#wrap #leftBody .leftDiv3 a {
+	background:url(default.png);
+	display:block;
+	width:103px;
+	height:27px;
+	text-align:center;
+	line-height:27px;
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+}
+#wrap #leftBody .leftDiv3 a:hover {
+	background:url(d_hover.png);
+}
+
+#rightBody .rightDiv1 h2 {
+	color:#000000;
+	font-size:24px;
+	font-weight:normal;
+	margin:25px 0 0 0;
+}
+#rightBody .rightDiv1 ul li {
+	border-bottom:1px dashed #CCCCCC;
+	height:70px;
+	padding:15px 0 0 0;
+}
+#rightBody .rightDiv1 ul li h3 a {
+	color:#0074C5;
+	font-weight:normal;
+	text-decoration:underline;
+}
+#rightBody .rightDiv1 ul li h3 a:hover {
+	color:#009900;
+}
+#rightBody .rightDiv1 ul li p {
+	color:#555555;
+	margin:5px 0 0 0;
+}
+#rightBody .rightDiv2 dl {
+	height:64px;
+	margin:35px 0 0 0;
+}
+#rightBody .rightDiv2 dl dt {
+	padding:8px 0 3px 0;
+}
+#rightBody .rightDiv2 dl dt a {
+	font-size:24px;
+	color:#333333;
+	font-weight:bold;
+}
+#rightBody .rightDiv2 dl dd {
+	font-size:15px;
+	color:#333333;
+	font-weight:bold;
+}
+#rightBody .rightDiv2 dl.dl1 {
+	background:url(twitter.png) 160px center no-repeat;
+}
+#rightBody .rightDiv2 dl.dl2 {
+	background:url(rss.png) 160px center no-repeat;
+}
+#footer p {
+	text-align:center;
+	color:#ffffff;
+	line-height:200%;
+}
+#footer p.p1 {
+	padding-top:15px;
+}
+#footer p a {
+	color:#ffffff;
+	text-decoration:underline;
+	margin:0 20px 0 0;
+}
+#footer p a.last {
+	margin:0;
+}
