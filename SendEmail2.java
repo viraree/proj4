@@ -22,50 +22,50 @@ public class SendEmail2
 		
 		
 		   
-      // ÊÕ¼şÈËµç×ÓÓÊÏä
+      // æ”¶ä»¶äººç”µå­é‚®ç®±
       String to = "1369852622@qq.com";
  
-      // ·¢¼şÈËµç×ÓÓÊÏä
+      // å‘ä»¶äººç”µå­é‚®ç®±
       String from = "1369852622@qq.com";
  
-      // Ö¸¶¨·¢ËÍÓÊ¼şµÄÖ÷»úÎª smtp.qq.com
-      String host = "smtp.qq.com";  //QQ ÓÊ¼ş·şÎñÆ÷
+      // æŒ‡å®šå‘é€é‚®ä»¶çš„ä¸»æœºä¸º smtp.qq.com
+      String host = "smtp.qq.com";  //QQ é‚®ä»¶æœåŠ¡å™¨
  
-      // »ñÈ¡ÏµÍ³ÊôĞÔ
+      // è·å–ç³»ç»Ÿå±æ€§
       Properties properties = System.getProperties();
  
-      // ÉèÖÃÓÊ¼ş·şÎñÆ÷
+      // è®¾ç½®é‚®ä»¶æœåŠ¡å™¨
       properties.setProperty("mail.smtp.host", host);
  
       properties.put("mail.smtp.auth", "true");
-      // »ñÈ¡Ä¬ÈÏsession¶ÔÏó
+      // è·å–é»˜è®¤sessionå¯¹è±¡
       Session session = Session.getDefaultInstance(properties,new Authenticator(){
         public PasswordAuthentication getPasswordAuthentication()
         {
-         return new PasswordAuthentication("1369852622@qq.com", "lugurhpzwyrmigie"); //·¢¼şÈËÓÊ¼şÓÃ»§Ãû¡¢ÊÚÈ¨Âë
+         return new PasswordAuthentication("1369852622@qq.com", "46546546546546546456"); //å‘ä»¶äººé‚®ä»¶ç”¨æˆ·åã€æˆæƒç 
         }
        });
  
       try{
-         // ´´½¨Ä¬ÈÏµÄ MimeMessage ¶ÔÏó
+         // åˆ›å»ºé»˜è®¤çš„ MimeMessage å¯¹è±¡
          MimeMessage message = new MimeMessage(session);
  
-         // Set From: Í·²¿Í·×Ö¶Î
+         // Set From: å¤´éƒ¨å¤´å­—æ®µ
          message.setFrom(new InternetAddress(from));
  
-         // Set To: Í·²¿Í·×Ö¶Î
+         // Set To: å¤´éƒ¨å¤´å­—æ®µ
          message.addRecipient(Message.RecipientType.TO,
                                   new InternetAddress(to));
  
-         // Set Subject: Í·²¿Í·×Ö¶Î
+         // Set Subject: å¤´éƒ¨å¤´å­—æ®µ
          message.setSubject(subject);
  
-         // ÉèÖÃÏûÏ¢Ìå
+         // è®¾ç½®æ¶ˆæ¯ä½“
          message.setText(text);
  
-         // ·¢ËÍÏûÏ¢
+         // å‘é€æ¶ˆæ¯
          Transport.send(message);
-         System.out.println("ÓÊ¼ş·¢ËÍ³É¹¦");
+         System.out.println("é‚®ä»¶å‘é€æˆåŠŸ");
       }catch (MessagingException mex) {
          
 		 mex.printStackTrace();
@@ -81,17 +81,17 @@ public class SendEmail2
    public static void main(String [] args)
    {
 	   SendEmail2 mailer=new SendEmail2();
-	   String subject="ÎÒ°®Äã";
-	   String text="ÎÒÕæµÄºÜ°®Äã";
+	   String subject="æˆ‘çˆ±ä½ ";
+	   String text="æˆ‘çœŸçš„å¾ˆçˆ±ä½ ";
 	   
 	   mailer.send(subject, text);
 	   
-	   subject="Õ¾³¤£¬ÄãºÃ£¬ÎÒºÜ°®Äã";
-	   text="Õ¾³¤£¬ÇëÔÊĞíÎÒËµÎÒÕæµÄºÜ°®Äã";
+	   subject="ç«™é•¿ï¼Œä½ å¥½ï¼Œæˆ‘å¾ˆçˆ±ä½ ";
+	   text="ç«™é•¿ï¼Œè¯·å…è®¸æˆ‘è¯´æˆ‘çœŸçš„å¾ˆçˆ±ä½ ";
 	   mailer.send(subject, text);
 	   
-	   subject="Õ¾³¤£¬ÄúºÃ£¬I love you";
-	   text="Õ¾³¤£¬ÇëÔÊĞíÎÒËµI really really love you love you";
+	   subject="ç«™é•¿ï¼Œæ‚¨å¥½ï¼ŒI love you";
+	   text="ç«™é•¿ï¼Œè¯·å…è®¸æˆ‘è¯´I really really love you love you";
 	   mailer.send(subject, text);
 	   
 	    
